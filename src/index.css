@@ -2,12 +2,19 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 #app {
-	background-color: #cccccc;
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 .page {
-	background-color: #dddddd;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	pading: 1rem;
+	@apply bg-green-50;
 }
 a {
 	font-weight: 500;
@@ -24,11 +31,6 @@ body {
 	place-items: center;
 	min-width: 320px;
 	min-height: 100vh;
-}
-
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
 }
 
 button {
