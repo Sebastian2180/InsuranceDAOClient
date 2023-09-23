@@ -1,6 +1,7 @@
 // Routes.js
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "../pages";
+import ConnectPage from "../pages/connect";
+import HomePage from "../pages/home";
 import Login from "../pages/login";
 import FeedPage from "../pages/feed";
 import Header from "../components/header";
@@ -11,6 +12,15 @@ const Router = () => {
 			<Routes>
 				<Route
 					path="/"
+					element={
+						<>
+							<Header title={"Connect"} />
+							<ConnectPage />
+						</>
+					}
+				/>
+				<Route
+					path="/home"
 					element={
 						<>
 							<Header title={"Home"} />

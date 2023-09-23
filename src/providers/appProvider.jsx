@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 // Import the AppContext and AppProviderProps
-import { AppContext, AppProviderProps } from "./appContext";
+import { AppContext } from "./appContext";
 
 // Create the provider component
-const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
+const AppProvider = ({ children }) => {
 	// Define your initial state here if needed
 	// const [data, setData] = useState<SomeDataType>(initialData);
 

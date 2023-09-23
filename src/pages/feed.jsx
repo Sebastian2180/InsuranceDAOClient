@@ -16,7 +16,7 @@ export default function FeedPage() {
 	if (isError) return <Text textStyle={"subTitle"}>Error fetching data</Text>;
 	return (
 		<div className="page">
-			<Box bg="green.900" w={"100%"} maxW={800} className="p-6 rounded-lg">
+			<Box bg="blue.300" w={"100%"} maxW={800} className="p-6 rounded-lg">
 				<Text textStyle={"title"}>Feed</Text>
 				<ul>
 					{/* @ts-expect-error - testing */}

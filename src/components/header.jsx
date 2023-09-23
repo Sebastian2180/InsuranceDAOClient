@@ -1,19 +1,19 @@
 import { Box, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-export interface HeaderProps {
-	title: string;
-}
-export default function Header({ title }: HeaderProps) {
+
+export default function Header() {
 	return (
 		<Box
-			bgColor={"green.900"}
-			className={"flex flex-row justify-between align-bottom  px-8 py-2"}>
-			<Text textStyle={"title"} color={"green.200"}>
-				{title}
-			</Text>
-			<nav className={"flex flex-row gap-2 align-bottom"}>
-				<Link to="/" className="flex flex-col justify-end">
+			bgColor={"blue.100"}
+			className={"flex flex-row justify-between align-bottom px-8 py-2"}>
+			<Link to="/" className="flex flex-col justify-end">
+				<Text textStyle={"title"} color={"white"}>
+					InsuranceDAO
+				</Text>
+			</Link>
+			<nav className={"flex flex-row gap-20 align-bottom"}>
+				<Link to="/home" className="flex flex-col justify-end">
 					<Text textStyle={"link"} fontSize={"xl"}>
 						Home
 					</Text>

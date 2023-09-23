@@ -13,8 +13,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	pading: 1rem;
-	@apply bg-green-50;
+	padding: 1rem;
+	background-color: #285678;
 }
 a {
 	font-weight: 500;

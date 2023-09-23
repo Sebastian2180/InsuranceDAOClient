@@ -1,19 +1,16 @@
 import { Box, Text } from "@chakra-ui/react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
-type Inputs = {
-	example: string;
-	exampleRequired: string;
-};
+
 export default function Login() {
 	const {
 		register,
 		handleSubmit,
 		watch,
 		formState: { errors },
-	} = useForm<Inputs>();
+	} = useForm();
 
-	const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+	const onSubmit = (data) => console.log(data);
 	console.log(watch("example")); // watch input value by passing the name of it
 	return (
 		<div className="page">
